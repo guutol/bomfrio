@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class TesteCliente {
     public static void main(String[] args) {
         Cliente cliente = new Cliente(
-            "59576363802",
+            "59000000002",
             "Gustavo",
             "18996696588",
             "n4megustavo@gmail.com",
@@ -19,9 +19,10 @@ public class TesteCliente {
         ClienteDAO dao = new ClienteDAO();
         boolean sucesso = dao.inserir(cliente);
 
-        if (sucesso) {
+        if(sucesso) {
             System.out.println("Cliente inserido com sucesso!");
-        } else {
+        } 
+        else {
             System.out.println("Falha ao inserir cliente.");
         }
     }
