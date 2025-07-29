@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: D8ECFF;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bomfrio.controller.TelaPrincipalController">
+    <AnchorPane layoutY="0" prefHeight="80.0" style="-fx-background-color: #000080;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Button fx:id="btnClientes" layoutX="24.0" layoutY="19.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="109.0" style="-fx-border-radius: 10; -fx-background-color: #2874FF;" textAlignment="CENTER" onAction= "#abrirTelaClientes" contentDisplay="LEFT" graphicTextGap="8">
+            <graphic>
+                <ImageView fitWidth="35" fitHeight="35" preserveRatio="true">
+                    <image>
+                        <Image url="@/fxml/assets/clientes.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="btnServicos" layoutX="143.0" layoutY="19.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="109.0" style="-fx-border-radius: 10; -fx-background-color: #2874FF;" textAlignment="CENTER" onAction= "#abrirTelaServicos" contentDisplay="LEFT" graphicTextGap="8">
+            <graphic>
+                <ImageView fitWidth="35" fitHeight="35" preserveRatio="true">
+                    <image>
+                        <Image url="@/fxml/assets/servicos.png"/>
+                    </image>
+                </ImageView>
+            </graphic>     
+        </Button>
+      </children>
+    </AnchorPane>
+    <Label layoutX="200" layoutY="200" style="-fx-font-size: 24px;" text="Bem-vindo à tela principal!" />
+</AnchorPane>

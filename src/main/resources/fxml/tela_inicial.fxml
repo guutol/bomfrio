@@ -2,26 +2,47 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.text.Font?>
 
+<VBox xmlns="http://javafx.com/javafx/24.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.bomfrio.controller.TelaInicialController"
+      spacing="30"
+      alignment="CENTER"
+      prefHeight="600.0" prefWidth="800.0"
+      style="-fx-background-color: #D8ECFF;"
+      >
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D8ECFF;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label alignment="CENTER" layoutX="64.0" layoutY="51.0" prefHeight="95.0" prefWidth="161.0" text="Bomfrio" textFill="NAVY">
-         <font>
-            <Font size="44.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="64.0" layoutY="146.0" prefHeight="124.0" prefWidth="387.0" text="Sistema para gerenciamento de ordens de serviço" textFill="NAVY" wrapText="true">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-      <Button layoutX="64.0" layoutY="270.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="161.0" style="-fx-background-color: #000080;" text="Iniciar" textAlignment="CENTER" textFill="#d8ecff">
-         <font>
-            <Font size="17.0" />
-         </font>
-      </Button>
-   </children>
-</Pane>
+   <padding>
+      <Insets top="40" bottom="40" left="40" right="40"/>
+   </padding>
+
+   <Label text="Bomfrio" textFill="black">
+      <font>
+         <Font size="44.0"/>
+      </font>
+   </Label>
+
+   <Label text="Sistema para gerenciamento de clientes e serviço"
+          textFill="black"
+          wrapText="true"
+          maxWidth="600">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </Label>
+
+   <Button fx:id="btnIniciar"
+           text="Iniciar"
+           onAction="#handleIniciar"
+           style="-fx-background-color: #2874FF;"
+           textFill="#D8ECFF"
+           maxWidth="200" prefHeight="56.0">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Button>
+
+</VBox>

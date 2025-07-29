@@ -13,6 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/tela_inicial.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Bomfrio - Sistema de Ordens de Serviço");
+        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
